@@ -1,0 +1,386 @@
+	    <div class="view-wrapper">
+		    <div class="view top">
+			    <img src="./Szene38/0_Background.png" 		                style="" />
+			    <img src="./Szene38/1_Sterne.png" 		                    style="margin-left: 600px; margin-top: -300px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img src="./Szene38/2_Mond.png" 		                    style="margin-left: 900px; margin-top: 30px;" />
+			    <img src="./Szene38/Animation_Blitz2.gif" 		            style="" />
+			    <img src="./Szene38/Animation_Blitz1.gif" 		            style="margin-left: 120px; margin-top: -30px;" />
+			    <img src="./Szene38/Animation_Blitz2gross.gif" 		        style="margin-left: 300px; margin-top: -30px;" />
+			    <img src="./Szene38/4_Wolken_obenlinks.png" 		        style="" />
+			    <img src="./Szene38/5_Vordergrund.png" 		                style="" />
+			    <img src="./Szene38/6_Eisen.png" 		                    style="" />
+
+			    <div id="s38wayone" style="width: 500px; height: 500px; margin-left: 50px; margin-top: 0px"
+				    class="action optional" data-show="#s38wayoneNext" data-hide="#s38wayone"
+                    data-tooltip-header="PFAD DER GERECHTEN" data-tooltip-style="width: 550px; height: 280px; margin-left: 50px; margin-top: 80px" data-tooltip-alternative="true"
+                    data-tooltip-text="Dieser Pfad führt zum Hauptquartier der Schatten. Es ist schon viele Jahre her, als ich diesen Weg zuletzt gegangen bin, aber es muss sich etwas ändern... Deshalb stehe ich dir auch hier zur Seite, um den Schatten endlich das Handwerk legen zu können."></div>
+        	    <img id="s38wayoneNext" src="./Images/Weiterbutton_alternative.png" onclick="$('.way-two').remove(); greybox.logic.nextView();"
+                    style="margin-left: 135px; margin-top: 400px; width:149px; height:70px; display: none; cursor: pointer;" /> />
+
+
+
+			    <div id="s38waytwo" style="width: 500px; height: 500px; margin-left: 720px; margin-top: 50px"
+				    class="action optional" data-show="#s38waytwoNext" data-hide="#s38waytwo"
+                    data-tooltip-header="WEG DER UNGEWISSHEIT" data-tooltip-style="width: 550px; height: 280px; right: 50px; margin-top: 80px"
+                    data-tooltip-text="Dieser Weg führt ins Ungewisse. Doch gehst du ihn, so kann er dir vielleicht die Antworten auf all deine Fragen offenbaren."></div>
+        	    <img id="s38waytwoNext" src="./Images/Weiterbutton.png" onclick="$('.way-one').remove(); greybox.logic.nextView();"
+                    style="margin-left: 890px; margin-top: 400px; width:149px; height:70px; display: none; cursor: pointer;" />
+
+                <div class="action" style="width: 0px; height: 0px; display: none"></div>
+            </div>
+        </div>
+	    <div class="view-wrapper way-one">
+		    <div class="view" data-onshow="$('#next').attr('src', './Images/Weiterbutton_alternative.png');">
+			    <img src="./Szene39/0_Background.png" 		                style="" />
+			    <img src="./Szene39/1_Sterne.png" 		                    style="margin-top: -200px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+        	    <img src="./Szene39/2_Leuchtkranzrechts.png" 		        style="margin-left: 620px; margin-top: -40px;"
+                    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+			    <img src="./Szene39/3_Back_oben.png" 		                style="" />
+			    <img src="./Szene39/4_Baumleuchten_obenlinks.png" 		    style=""
+                    class="blink" data-interval="100" data-life="5" data-fade-duration="770" />
+			    <img src="./Szene39/6_Vordergrund.png" 		                style="" />
+
+
+			    <img src="./Szene39/7_Ring_rechts_medium.png" 		        style="margin-left: 1060px; margin-top: 530px;"
+                    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+			    <img src="./Szene39/8_Ring_rechts_large.png" 		        style="margin-left: 940px; margin-top: 390px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+
+			    <img src="./Szene39/9_Ring_links_large.png" 		        style="margin-left: -150px; margin-top: 240px;"
+                    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+			    <img src="./Szene39/11_Ring_links_medium.png" 		        style="margin-left: -110px; margin-top: 306px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img src="./Szene39/10_Ring_links_small.png" 		        style="margin-left: -41px; margin-top: 366px;"
+                    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+
+			    <img id="s39eisen1" src="./Szene39/12_Eisen.png" 		                    style="" />
+			    <img id="s39eisen2" src="./Szene39/13_Eisen.png" 		    style="display: none;" />
+			    <img src="./Szene39/13_Wolken_obenlinks.png" 		        style="" />
+
+			    <img src="./Szene39/Animation_Blitz2.gif" 		            style="margin-left:355px; margin-top: 60px"/>
+
+			    <div id="s39showEisen" style="width: 500px; height: 660px; margin-left: 150px; margin-top: 300px"
+				    class="action sound" data-file="./Sounds/Figurensound/Eisen.MP3" data-show="#s39eisen2" data-hide="#s39eisen1,#s39showEisen"
+                    data-tooltip-header="EISEN" data-tooltip-style="width: 550px; height: 210px; margin-left: 50px; margin-top: 80px" data-tooltip-alternative="true"
+                    data-tooltip-text="Du hast den Weg der Gerechtigkeit gewählt. Das war eine gute Entscheidung! <br/\>Am Ende des Weges befindet sich das Hauptquartier der Schatten - also lass uns gehen!"></div>
+    	    </div>
+	    </div>
+	    <div class="view-wrapper way-one">
+		    <div class="view">
+			    <img src="./Szene40/0_Background.png" 		                style="" />
+			    <img src="./Szene40/1_Sterne.png" 		                    style="margin-top: -250px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img src="./Szene40/2_Leuchtkranzrechts.png" 		        style="margin-left: 670px; margin-top: 40px;"
+                    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+			    <img src="./Szene40/3_Animation_Blitz2gross.gif" 		    style="margin-left: 120px; margin-top: 170px;" />
+			    <img src="./Szene40/4_Wolken_obenlinks.png" 		        style="" />
+			    <img src="./Szene40/5_Animation_Blitz1.gif" 		        style="margin-left: 420px; margin-top: 190px;" />
+			    <img src="./Szene40/6_Wolken_obenlinks.png" 		        style="" />
+			    <img src="./Szene40/7_Tower.png" 		                    style="" />
+			    <img src="./Szene40/8_Vordergrund.png" 		                style="" />
+			    <img id="s40eisen1" src="./Szene40/9_Eisen_untenrechts.png" 		        style="" />
+			    <img id="s40eisen2" src="./Szene40/10_Eisen_untenrechts.png" 		        style="display: none;" />
+
+			    <div id="s40showEisen" style="width: 1200px; height: 660px; margin-left: 0px; margin-top: 300px"
+				    class="action sound" data-file="./Sounds/Figurensound/Eisen.MP3" data-show="#s40eisen2" data-hide="#s40eisen1,#s40showEisen"
+                    data-tooltip-header="EISEN" data-tooltip-style="width: 550px; height: 210px; margin-left: 50px; margin-top: 150px" data-tooltip-alternative="true"
+                    data-tooltip-text="Ein furchtbarer Anblick, nicht wahr!? <br/\>Die Schatten sind eine grausame Organisation, doch wir werden dieser Schreckensherrschaft hier und heute ein Ende bereiten. "></div>
+            </div>
+        </div>
+	    <div class="view-wrapper way-one">
+		    <div class="view">
+			    <img src="./Szene41/0_Background.png" 		                style="" />
+			    <img src="./Szene41/1_Sterne.png" 		                    style="margin-left: -20px; margin-top: -240px;"
+				    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img class="slide-left" src="./Szene11/1_Wolke.png" style="margin-top: -40px" data-wrapper-width="100%" />
+			    <img src="./Szene41/2_Back2.png" 		                    style="" />
+			    <img src="./Szene41/3_Baum_linksoben.png" 	                style="" />
+			    <img src="./Szene41/Maske_Schein.png" 		                style="margin-left:265px; margin-top: 335px"
+				    class="blink" data-interval="5000" data-life="500" data-fade-duration="3000" />
+			    <img src="./Szene41/4_MASKE.png" 		                    style="margin-left:280px; margin-top: 350px" />
+			    <img src="./Szene41/6_Leuchtkranz.png" 		                style="margin-left:850px; margin-top: -60px"
+				    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+			    <img src="./Szene41/7_Nebel_links.png" 		                style="" />
+			    <img src="./Szene41/8_Back3.png" 		                    style="" />
+			    <img src="./Szene41/Animation_Einschlagbaum.gif" style="display: none;" />
+			    <img src="./Szene41/10_Vordergrund.png" 	                style="" />
+			    <img src="./Szene41/11_Schaltersockel.png" 	                style="" />
+			    <img src="./Szene41/12_Schalter_off.png" 	                style="" />
+			    <img src="./Szene41/14_Eisen_rechtsunten.png" 	            style="right: 0; bottom: 0;" />
+			    <img src="./Szene41/18_Wolken_obenlinks.png" 	            style="" />
+
+			    <div style="width: 200px; height: 200px; margin-left: 210px; margin-top: 290px"
+				    class="action" data-tooltip-header="MAD ANGEL" data-tooltip-style="width: 550px; height: 235px; margin-left: 50px; margin-top: 80px" data-tooltip-alternative="true"
+                    data-tooltip-text="EISEN? EISEN, bist das wirklich du? Nach so vielen Jahren sehen wir uns wieder. Die Organisation hat mich verstoßen und an diesen Pfahl gebunden, nachdem ich meine eigene Bande gründen wollte. <br/\>Wie geht es deiner Frau und deinem Sohn? Das letzte Mal als ich sie sah, trugen sie eine recht ungesunde Bräune! Muahahaha..."></div>
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-one">
+		    <div class="view actionless">
+			    <img src="./Szene41/0_Background.png" 		style="" />
+			    <img src="./Szene41/1_Sterne.png" 		    style="margin-left: -20px; margin-top: -240px;"
+				    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img class="slide-left" src="./Szene11/1_Wolke.png" style="margin-top: -40px" data-wrapper-width="100%" />
+			    <img src="./Szene41/2_Back2.png" 		    style="" />
+			    <img src="./Szene41/3_Baum_linksoben.png" 	style="" />
+			    <img id="s41maske" src="./Szene41/4_MASKE.png" 		style="margin-left:280px; margin-top: 350px" />
+		        <img src="./Szene41/6_Leuchtkranz.png" 		style="margin-left:850px; margin-top: -60px"
+				    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+			    <img src="./Szene41/7_Nebel_links.png" 		style="" />
+			    <img src="./Szene41/8_Back3.png" 		    style="" />
+			    <img id="s41baum" src="./Szene41/Animation_Einschlagbaum.gif" style="display: none;" />
+			    <img src="./Szene41/10_Vordergrund.png" 	style="" />
+			    <img src="./Szene41/11_Schaltersockel.png" 	style="" />
+			    <img id="s41schalter1" src="./Szene41/12_Schalter_off.png" 	style="" />
+			    <img id="s41schalter2" src="./Szene41/13_Schalter_on.png" 	style="display: none;" />
+			    <img src="./Szene41/Schaltersockel_schein.png" 	style=""
+				    class="blink" data-interval="3000" data-life="500" data-fade-duration="3000" />
+			    <img id="s41eisen1" src="./Szene41/15_Eisen_rechtsunten2.png" 	style="right: 0; bottom: 0;" />
+			    <img id="s41eisen2" src="./Szene41/16_Eisen_rechtsunten3_schalterON.png" 	style="right: 0; bottom: 0; display: none;" />
+			    <img src="./Szene41/18_Wolken_obenlinks.png" 	style="" />
+			    <img id="s41blitz" src="./Szene41/Animation_Blitzeinschlag.gif" style="display: none; margin-left: 130px" />
+			    <img id="s41maskeAni" src="./Szene41/Animation_Kopf.gif" style="display: none; margin-left: 265px; margin-top: 328px;" />
+
+
+			    <div style="width: 200px; height: 200px; margin-left: 420px; margin-top: 520px"
+				    class="action optional sound" data-hide="#s41eisen1,#s41schalter1,#s41maske" data-show="#s41eisen2,#s41schalter2,#s41baum,#s41blitz,#s41maskeAni"  data-tooltip-alternative="true"
+				    data-file="./Sounds/Szene41/Thunder7.wav" data-sound-callback="$('#s41eisen1,#s41schalter1,#s41maske').show(); $('#s41eisen2,#s41schalter2,#s41baum,#s41blitz,#s41maskeAni').hide();"></div>
+
+                <div style="width: 460px; height: 140px; right: 50px; margin-top: 140px; display: block;" class="tooltip alternative">
+                    <div class="tooltip-background"></div>
+                    <div class="tooltip-content">
+                        <div class="tooltip-header">EISEN</div>
+                        <div class="tooltip-text" style="width: 500px; height: 175px;">
+Noch ein Wort und ich... <br/> Kleiner, lass uns besser weitergehen!</div>
+                    </div>
+                </div>
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-one">
+		    <div class="view">
+			    <img src="./Szene42/0_Background.png" 		style="" />
+			    <img src="./Szene42/1_Sterne.png" 		    style="margin-left: -100px; margin-top: -100px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img src="./Szene42/2_Back2.png" 		    style="" />
+			    <img src="./Szene42/3_Leuchtkranz.png" 		style="margin-left: 400px; margin-top: -200px;"
+                    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+			    <img src="./Szene42/4_Vordergrund.png" 		style="" />
+			    <img src="./Szene42/5_Lichtkegel.png" 		style="right: 5px; margin-top: 265px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.330" />
+			    <img src="./Szene42/6_Maske_obenrechts.png" 		style="" />
+			    <img src="./Szene42/7_Stein_untenlinks.png" 		style="" />
+			    <img src="./Szene42/8_Eisen_untenlinks.png" 		style="" />
+			    <img src="./Szene42/9_nebel.gif" 		    style="margin-left: 90px; margin-top: 410px" />
+			    <img src="./Szene42/10_Stein_untenlinks.png" 		style="" />
+			    <img src="./Szene42/11_nebel.gif" 		    style="margin-left: -50px; margin-top: 450px" />
+			    <img src="./Szene42/12_Stein_untenlinks.png" 		style="" />
+
+			    <div style="width: 500px; height: 660px; margin-left: 300px; margin-top: 300px"
+				    class="action sound" data-file="./Sounds/Figurensound/Eisen.MP3"
+                    data-tooltip-header="EISEN" data-tooltip-style="width: 550px; height: 150px; margin-left: 50px; margin-top: 180px" data-tooltip-alternative="true"
+                    data-tooltip-text="Hier irgendwo hatte ich sie doch versteckt. <br/\> ...Ach, da sind sie ja!"></div>
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-one">
+		    <div class="view">
+			    <img src="./Szene42/0_Background.png" 		style="" />
+			    <img src="./Szene42/1_Sterne.png" 		    style="margin-left: -100px; margin-top: -100px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img src="./Szene42/2_Back2.png" 		    style="" />
+			    <img src="./Szene42/3_Leuchtkranz.png" 		style="margin-left: 400px; margin-top: -200px;"
+                    class="rotate-slow" data-direction="right" data-degree-step="0.130" />
+			    <img src="./Szene42/4_Vordergrund.png" 		style="" />
+			    <img src="./Szene42/5_Lichtkegel.png" 		style="right: 5px; margin-top: 265px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.330" />
+			    <img src="./Szene42/6_Maske_obenrechts.png" 		style="" />
+			    <img src="./Szene42/7_Stein_untenlinks.png" 		style="" />
+			    <img src="./Szene42/9_nebel.gif" 		    style="margin-left: 90px; margin-top: 410px" />
+			    <img src="./Szene42/10_Stein_untenlinks.png" 		style="" />
+			    <img src="./Szene42/11_nebel.gif" 		    style="margin-left: -50px; margin-top: 450px" />
+			    <img src="./Szene42/12_Stein_untenlinks.png" 		style="" />
+			    <img src="./Szene42/13_Eisen2.png" 		    style="margin-left: 650px; margin-top: 250px;" />
+
+			    <div style="width: 600px; height: 700px; margin-left: 640px; margin-top: 250px"
+				    class="action"
+                    data-tooltip-header="EISEN" data-tooltip-style="width: 550px; height: 555px; margin-left: 50px; margin-top: 150px" data-tooltip-alternative="true"
+                    data-tooltip-text="Unsere Wege werden sich hier trennen. Doch zuvor muss ich dir noch etwas Wichtiges sagen. Als die Schatten mein Haus abgefackelt haben, verlor ich nicht nur mein Heim, sondern noch etwas viel Wertvolleres... <br/\>Meine Frau und mein Sohn wurden vom Feuer überrascht und konnten nicht rechtzeitig aus der Flammenhölle entkommen. Ich kam zu spät und konnte nur noch ihre verkohlten Körper aus den brennenden Trümmern bergen... <br/\> Deshalb muss ich das jetzt alleine zu Ende bringen. Die Sache wird ab hier zu heiß für dich, also halt die Ohren steif, Kleiner! Ich statte diesen Schweinen nun einen letzten Besuch ab, bevor ich mich schlafen lege."></div>
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-one">
+		    <div class="view video audio" data-pause-audio="guadnachtmusi">
+			    <video width="1280" height="760" src="./Videos/Szene43_Outro_Eisen.mp4">
+			    </video> 
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-two">
+		    <div class="view text" data-text="Die Stadt wirkt plötzlich so gespenstisch... <br/\>Oha, da ist ja der NEAPLER HOCHSTAPLER und WIDOWs Schwester.">
+			    <img src="./Szene45/0_Background.png" 		style="" />
+			    <img src="./Szene45/1_Sterne.png" 		    style="margin-left: -300px; margin-top: -300px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img src="./Szene45/2_Hintenhaueser.png"    style="" />
+			    <img src="./Szene45/3_nebelanimation.gif" 	style="margin-left: 550px; margin-top: 200px;" />
+			    <img src="./Szene45/4_Mittehaueser.png" 	style="" />
+			    <img src="./Szene45/5_Neapleruntenrechts.png" 	style="" />
+			    <img src="./Szene45/6_Elderladyobenlinks.png" 	style="" />
+			    <img src="./Szene45/7_nebelanimation.gif" 	style="" />
+			    <img src="./Szene45/10_nebel_gespiegelt.gif" 	style="margin-left: 800px; margin-top: 350px;" />
+			    <img src="./Szene45/8_Vornehaueser.png" 	style="" />
+			    <img src="./Szene45/9_Eisenuntenlinks.png" 	style="" />
+			    <img src="./Szene45/11_Nebeluntenvordergrund.png" 	style="" />
+
+			    <div style="width: 300px; height: 400px; margin-left: 650px; margin-top: 450px"
+				    class="action sound" data-file="./Sounds/Figurensound/NeaplerHochstapler.wav.MP3"
+                    data-tooltip-header="NEAPLER HOCHSTAPLER" data-tooltip-style="width: 550px; height: 275px; right: 50px; margin-top: 150px"
+                    data-tooltip-text="Irgendetwas Schreckliches muss geschehen sein! Mein Herz blieb für einen Augenblick stehen und ich hatte das Gefühl, als wäre etwas in mir gestorben. Würdest du bitte für mich nach EXPEDIOS sehen?! Ich bin ganz starr vor Angst, ihm könnte etwas zugestoßen sein..."></div>
+			    <div style="width: 300px; height: 320px; margin-left: 230px; margin-top: 250px"
+				    class="action sound" data-file="./Sounds/Figurensound/ElderLady.MP3"
+                    data-tooltip-header="ELDER LADY" data-tooltip-style="width: 550px; height: 210px; margin-left: 50px; margin-top: 150px"
+                    data-tooltip-text="Meine Schwester ist nicht mehr wiederzuerkennen. Sie hat mich nicht einmal mehr angesehen, als sie vor einer Weile hier vorbeiging und diese schleimige Spur hinter sich herzog. "></div>
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-two">
+		    <div class="view text" data-text="Das ist zweifelsfrei der Schleim, den ich bei EXPEDIOS auf dem Bett und in meiner Wohnung gesehen habe. ">
+			    <img src="./Szene46/0_Backgroundoben.png" 	style="" />
+			    <img src="./Szene46/1_Sterne.png" 		    style="margin-left: -100px; margin-top: -150px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img src="./Szene46/2_Backcity.png" 		style="" />
+		        <img src="./Szene46/3_nebelanimation.gif" 	style="margin-left: 370px; margin-top: 70px;" />
+			    <img src="./Szene46/4_Back_obenlinks.png" 	style="" />
+			    <img src="./Szene46/5_Rauchoben.png" 		style="" />
+    		    <img src="./Szene46/6_nebelanimation.gif" 	style="margin-left: 50px; margin-top: 200px;" />
+			    <img src="./Szene46/Animation_feuerlinks.gif" 		    style="margin-left: 830px; margin-top: 178px;" />
+			    <img src="./Szene46/Animation_feuerrechts.gif" 		    style="margin-left: 938px; margin-top: 195px;" />
+			    <img src="./Szene46/7_Mauertor.png" 		style="" />
+			    <img src="./Szene46/8_Hausrechtsunten.png" 	style="" />
+			    <img src="./Szene46/9_Eisenrechtsunten.png" style="" />
+			    <img src="./Szene46/10_Spectatorsuntenlinks.png" style="" />
+			    <img src="./Szene46/Animation_Minispectator.gif" style="margin-left: 520px; margin-top: 420px;" />
+
+			    <div style="width: 240px; height: 200px; margin-left: 50px; margin-top: 510px"
+				    class="action sound" data-file="./Sounds/Figurensound/NES.wav.MP3"
+                    data-tooltip-header="NES" data-tooltip-style="width: 480px; height: 150px; margin-left: 50px; margin-top: 250px"
+                    data-tooltip-text="Ein Husten, ein Röcheln und ein Flehen… <br/\>Das Ende ist bereits zu sehen!"></div>
+
+			    <div style="width: 240px; height: 200px; margin-left: 250px; margin-top: 710px"
+				    class="action sound" data-file="./Sounds/Figurensound/SES.wav.MP3"
+                    data-tooltip-header="SES" data-tooltip-style="width: 480px; height: 150px; margin-left: 550px; margin-top: 620px"
+                    data-tooltip-text="Wer denn nun die Täter waren, <br/\>das wirst du bald noch selbst erfahren."></div>
+
+			    <div style="width: 240px; height: 200px; margin-left: 480px; margin-top: 400px"
+				    class="action sound" data-file="./Sounds/Figurensound/WID.wav.MP3"
+                    data-tooltip-header="WID" data-tooltip-style="width: 480px; height: 150px; margin-left: 650px; margin-top: 250px"
+                    data-tooltip-text="Glitschi, Glibber, Schleim… <br/\>Zwei Gestalten, unscheinbar und klein."></div>
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-two">
+		    <div class="view actionless text" data-text="Oh nein, FLEISCHPFLANZERL! <br/\>Was hat man dir nur angetan? ">
+			    <img src="./Szene47/0_Backgroundoben.png" 	style="" />
+			    <img src="./Szene47/1_Sterne.png" 		    style="margin-left: -100px; margin-top: -150px;"
+                    class="rotate-slow" data-direction="left" data-degree-step="0.130" />
+			    <img src="./Szene47/2_Blackback_untenrechts.png" 	style="" />
+			    <img src="./Szene47/3_Nebel_untenrechts.png" 	    style="" />
+			    <img src="./Szene47/5_Vordergrund.png" 	            style="" />
+			    <img src="./Szene47/6_Schattenvorne.png" 	        style="" />
+			    <img src="./Szene47/Animation_feuerlinks.gif" 	    style="margin-left: 500px; margin-top: 220px;" />
+			    <img src="./Szene47/Animation_feuerrechts.gif" 	    style="margin-left: 860px; margin-top: 300px;" />
+
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-two">
+		    <div class="view actionless text" data-text="Der NEAPLER HOCHSTAPLER hatte Recht. EXPEDIOS ist hinüber... <br/\>Aber was sehe ich da?! Das ist doch die Box, die aus meiner Wohnung gestohlen wurde!">
+			    <img src="./Szene48/0_Background.png" 	style="" />
+			    <img src="./Szene48/2_Widow.png" 	    style="" />
+			    <img src="./Szene48/3_Hund.png" 	    style="" />
+			    <img src="./Szene48/6_Nebel.png" 	    style="" />
+		        <img src="./Szene48/10_nebel_gespiegelt.gif" 	    style="margin-left: 140px; margin-top: 300px;" />
+		        <img src="./Szene48/8_schrank_untenlinks.png" 	    style="" />
+		        <img src="./Szene48/9_Greybox_untenlinks.png" 	    style="" />
+		        <img src="./Szene48/10_boxschein_untenlinks.png" 	style=""
+                    class="blink" data-interval="100" data-life="500" data-fade-duration="1500" />
+		        <img src="./Szene48/11_Boxnebel_unten.png" 	        style="" />
+		        <img src="./Szene48/12_Schatten_vordergrund.png" 	style="" />
+		        <img src="./Szene48/Animation_Vorhang.gif" 	        style="margin-left: 740px; margin-top: 120px;" />
+
+
+		    </div>
+	    </div>
+		<div class="view-wrapper way-two">
+		    <div class="view actionless">
+			    <img src="./Szene48/0_Background.png" 	style="" />
+			    <img src="./Szene48/2_Widow.png" 	    style="margin-left: 150px; margin-top: 50px;" />
+			    <img src="./Szene48/3_Hund.png" 	    style="" />
+			    <img src="./Szene48/6_Nebel.png" 	    style="" />
+		        <img src="./Szene48/10_nebel_gespiegelt.gif" 	    style="margin-left: 140px; margin-top: 300px;" />
+		        <img src="./Szene48/8_schrank_untenlinks.png" 	    style="" />
+		        <img src="./Szene48/9_Greybox_untenlinks.png" 	    style="" />
+		        <img src="./Szene48/10_boxschein_untenlinks.png" 	style=""
+                    class="blink" data-interval="100" data-life="500" data-fade-duration="1500" />
+		        <img src="./Szene48/11_Boxnebel_unten.png" 	        style="" />
+		        <img src="./Szene48/12_Schatten_vordergrund.png" 	style="" />
+		        <img src="./Szene48/Animation_Vorhang.gif" 	        style="margin-left: 740px; margin-top: 120px;" />
+
+                <div style="width: 600px; height: 290px; margin-left: 50px; margin-top: 80px; display: block;" class="tooltip">
+                    <div class="tooltip-background"></div>
+                    <div class="tooltip-content">
+                        <div class="tooltip-header">WIDOW</div>
+                        <div class="tooltip-text" style="width: 550px; height: 250px;">Ich war zu langsam... Jetzt ist alles vorbei! Du hast Recht, Kleiner, das ist die Box aus deinem Zimmer und jetzt kann ich es dir ja sagen... Ich war es, die bei dir eingebrochen ist. Die Fußspuren, die auf zwei Täter schließen ließen? Ich habe RUFUS Schuhe angezogen, um die Detektoren und dich in die Irre zu führen und mir ein Alibi zu verschaffen. </div>
+                    </div>
+                </div>
+		    </div>
+	    </div>
+		<div class="view-wrapper way-two">
+		    <div class="view actionless">
+			    <img src="./Szene48/0_Background.png" 	style="" />
+			    <img src="./Szene48/2_Widow.png" 	    style="margin-left: 250px; margin-top: 100px;" />
+			    <img src="./Szene48/3_Hund.png" 	    style="" />
+			    <img src="./Szene48/6_Nebel.png" 	    style="" />
+		        <img src="./Szene48/10_nebel_gespiegelt.gif" 	    style="margin-left: 140px; margin-top: 300px;" />
+		        <img src="./Szene48/8_schrank_untenlinks.png" 	    style="" />
+		        <img src="./Szene48/9_Greybox_untenlinks.png" 	    style="" />
+		        <img src="./Szene48/10_boxschein_untenlinks.png" 	style=""
+                    class="blink" data-interval="100" data-life="500" data-fade-duration="1500" />
+		        <img src="./Szene48/11_Boxnebel_unten.png" 	        style="" />
+		        <img src="./Szene48/12_Schatten_vordergrund.png" 	style="" />
+		        <img src="./Szene48/Animation_Vorhang.gif" 	        style="margin-left: 740px; margin-top: 120px;" />
+
+                <div style="width: 600px; height: 290px; margin-left: 50px; margin-top: 80px; display: block;" class="tooltip">
+                    <div class="tooltip-background"></div>
+                    <div class="tooltip-content">
+                        <div class="tooltip-header">WIDOW</div>
+                        <div class="tooltip-text" style="width: 550px; height: 215px;">EXPEDIOS hat mich mit dem Virus angesteckt und ich suchte verzweifelt nach einem Heilmittel. Zunächst versprachen mir die Schatten bei der Herstellung eines Anti-Virus zu helfen und baten mich nur darum, das Gelee von EXPEDIOS zu ernten, um es in ihrem Labor analysieren zu können und dadurch das Gegenmittel herzustellen. Jedoch konnte ich vor zwei Tagen mithören, wie sie davon sprachen, das Gelee weiterhin als Wundermarmelade namens „M100“ in das Ausland zu verkaufen, was meine Hoffnungen auf Heilung endgültig zerstörte. EXPEDIOS erzählte mir dann von einer Substanz, die das Virus neutralisieren könne. Diese Substanz befindet sich in deiner Greybox! Dummerweise hat ihn die Krankheit vergessen lassen, wo er den Schlüssel für das Schloss der Kiste versteckt hat. </div>
+                    </div>
+                </div>
+		    </div>
+	    </div>
+		<div class="view-wrapper way-two">
+		    <div class="view actionless">
+			    <img src="./Szene48/0_Background.png" 	style="" />
+			    <img src="./Szene48/2_Widow.png" 	    style="margin-left: 350px; margin-top: 150px;" />
+			    <img src="./Szene48/3_Hund.png" 	    style="" />
+			    <img src="./Szene48/6_Nebel.png" 	    style="" />
+		        <img src="./Szene48/10_nebel_gespiegelt.gif" 	    style="margin-left: 140px; margin-top: 300px;" />
+		        <img src="./Szene48/8_schrank_untenlinks.png" 	    style="" />
+		        <img src="./Szene48/9_Greybox_untenlinks.png" 	    style="" />
+		        <img src="./Szene48/10_boxschein_untenlinks.png" 	style=""
+                    class="blink" data-interval="100" data-life="500" data-fade-duration="1500" />
+		        <img src="./Szene48/11_Boxnebel_unten.png" 	        style="" />
+		        <img src="./Szene48/12_Schatten_vordergrund.png" 	style="" />
+		        <img src="./Szene48/Animation_Vorhang.gif" 	        style="margin-left: 740px; margin-top: 120px;" />
+
+                <div style="width: 600px; height: 275px; margin-left: 50px; margin-top: 80px; display: block;" class="tooltip">
+                    <div class="tooltip-background"></div>
+                    <div class="tooltip-content">
+                        <div class="tooltip-header">WIDOW</div>
+                        <div class="tooltip-text" style="width: 550px; height: 225px;">Natürlich hätte er sich im frühen Stadion der Krankheit selbst mit der Substanz heilen können, doch er hatte bereits die gesamte Welt gesehen und meinte, es sei Zeit, mit dem sinkenden Schiff unterzugehen… <br/> Oh nein... Ich fühle wie mein Körper schwindet... mir wird ganz magenta vor Augen...</div>
+                    </div>
+                </div>
+		    </div>
+	    </div>
+	    <div class="view-wrapper way-two">
+		    <div class="view video audio" data-pause-audio="guadnachtmusi">
+			    <video width="1280" height="760" src="./Videos/Szene49_Outro_Widow.mp4">
+			    </video> 
+		    </div>
+	    </div>
+

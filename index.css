@@ -1,0 +1,200 @@
+@font-face
+{
+	font-family: LTe50194;
+	src: url(./Fonts/LTe50194.ttf);
+}
+@font-face
+{
+	font-family: LTe50195;
+	src: url(./Fonts/LTe50195.ttf);
+}
+@font-face
+{
+	font-family: LTe50196;
+	src: url(./Fonts/LTe50196.ttf);
+}
+@font-face
+{
+	font-family: GillSansMT;
+	src: url(./Fonts/GillSansMT.ttf);
+}
+@font-face
+{
+	font-family: GillSansMTItalic;
+	src: url(./Fonts/GillSansMTItalic.ttf);
+}
+@font-face
+{
+	font-family: GillSansMTBoldItalic;
+	src: url(./Fonts/GillSansMTBoldItalic.ttf);
+}
+
+body {
+	padding: 0px;
+	margin: 0px;
+	background-color: black;
+	width:1280px;
+	height:960px;
+	overflow: hidden;
+}
+
+.view-wrapper {
+	width:1280px;
+	height:960px;
+	overflow: hidden;
+	display: none;
+	position: fixed;
+}
+
+.view
+{
+	top: -32px;
+
+	width:1280px;
+	height:1024px;
+	background-repeat:no-repeat;
+	overflow: hidden;
+	position: relative;
+}
+
+.slide-left-wrapper {
+	overflow: hidden;
+}
+
+.slide-left
+{
+	display: none;
+}
+
+.view > *
+{
+	position: absolute;
+}
+
+.view > .text-box
+{
+    width: 475px;
+    bottom: 100px;
+    margin-left: 400px;
+}
+
+.view > .text-box .text
+{
+    color: white;
+    padding: 10px;
+    font-family: GillSansMTItalic;
+    font-size: 23px;
+    text-align: center;
+    position: relative;
+}
+
+.view > .text-box > .text-box-background
+{
+    height: 100%;
+    width: 100%;
+    background-color: black;
+    opacity: 0.7;
+    position: absolute;
+}
+
+.view.top
+{
+    margin-top: 30px;
+}
+
+.view.top > .text-box
+{
+    width: 475px;
+    bottom: 130px;
+    margin-left: 400px;
+}
+
+.switch
+{
+	display: none;
+}
+
+.switch, .switch-initial, .switch-self, .action, .action-sound, #next, #next-blink
+{
+	cursor: pointer;
+}
+
+.blink
+{
+	display: none;
+}
+
+.tooltip
+{
+	display: none;
+}
+
+.tooltip-background
+{
+	background-color: black;
+	opacity: 0.6;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+}
+
+.tooltip-content
+{
+	position: absolute;
+	margin: 10px;
+	margin-left: 15px;
+	overflow: auto;
+}
+
+.tooltip-header
+{
+	width: 100%;
+	color: #E10084;
+	font-size: 26px;
+	font-weight: bold;
+	font-family: LTe50196;
+}
+
+.tooltip.alternative .tooltip-header
+{
+	color: #92FFFF;
+}
+
+
+
+.tooltip-text
+{
+	color: white;
+	margin-left: 10px;
+	margin-top: 10px;
+	font-size: 24px;
+	font-family: GillSansMT;
+	line-height: 1.3;
+	overflow: auto;
+	min-height: 40px;
+}
+
+
+
+
+
+
+
+
+
+
+.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
+{
+	width: 14px;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail
+{
+	background-color: black;
+	opacity: 1.0;
+}
+
+.mCSB_scrollTools .mCSB_draggerRail
+{
+	width: 9px;
+}
