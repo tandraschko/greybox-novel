@@ -1,6 +1,8 @@
 # greybox-novel
-Greybox Novel
+Greybox Novel is the bachelor graduate work of Sebastian Panzer.
 
-Content (story, text, images, videos, sounds) copyright by Sebastian Panzer (toggosebi@gmx.de)
+I helped to visualize the the novel via HTML5.
+
+Content (story, text, images, videos, sounds) copyright by Sebastian Panzer (toggosebi@gmx.de).
 
 Commercial usage not allowed!
