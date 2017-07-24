@@ -177,11 +177,59 @@ body {
 
 
 
+@keyframes rotate-right {
+	from {
+		transform: rotate(0deg);
+
+	}
+	to {
+		transform: rotate(360deg);
+	}
+}
+
+@keyframes rotate-left {
+	from {
+		transform: rotate(360deg);
+
+	}
+	to {
+		transform: rotate(0deg);
+	}
+}
 
 
+.rotate-right-very-slow {
+	animation: rotate-right 200s linear 0s infinite normal;
+}
+
+.rotate-left-very-slow {
+	animation: rotate-left 200s linear 0s infinite normal;
+}
+
+.rotate-right-very-very-slow {
+    animation: rotate-right 300s linear 0s infinite normal;
+}
+
+.rotate-left-very-very-slow {
+    animation: rotate-left 300s linear 0s infinite normal;
+}
+
+.rotate-right-slow {
+    animation: rotate-right 130s linear 0s infinite normal;
+}
+
+.rotate-left-slow {
+    animation: rotate-left 130s linear 0s infinite normal;
+}
 
 
+.rotate-right {
+    animation: rotate-right 90s linear 0s infinite normal;
+}
 
+.rotate-left {
+    animation: rotate-left 90s linear 0s infinite normal;
+}
 
 .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar
 {
