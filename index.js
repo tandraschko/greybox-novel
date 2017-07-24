@@ -148,7 +148,6 @@ greybox.logic =
             eval($view.data('onshow'));
         }
 
-        greybox.effects.initRotate($view);
         greybox.effects.initBlink($view);
         greybox.effects.initActions($view);
         greybox.effects.initSlide($view);
@@ -506,92 +505,6 @@ greybox.effects =
                     animate();
                 });
             }
-        });
-    },
-
-    initRotate: function($view)
-    {
-        var $rotateTargets = $view.find('.rotate');
-        $rotateTargets.data('degree', 0);
-        $rotateTargets.each(function() {
-            var $this = $(this);
-
-            var interval = setInterval(function() {
-                if (!$this.is(':visible')) {
-                    clearInterval(interval);
-                }
-                else
-                {
-                    var direction = $this.data('direction');
-                    var degreeStep = 0.1;
-                    if ($this.data('degree-step'))
-                    {
-                        degreeStep = parseFloat($this.data('degree-step'));
-                    }
-
-                    if (direction === 'left')
-                    {
-                        $this.data('degree', $this.data('degree') - degreeStep);
-                    }
-                    else
-                    {
-                        $this.data('degree', $this.data('degree') + degreeStep);
-                    }
-
-                    var style = 'rotate(' + $this.data('degree') + 'deg)';
-                    $this.css({
-                        '-webkit-transform': style,
-                        '-moz-transform': style,
-                        '-o-transform': style,
-                        '-ms-transform': style,
-                        'transform': style
-                    });
-                }
-            }, 10);
-        });
-
-
-
-        var $rotateSlowTargets = $view.find('.rotate-slow');
-        $rotateSlowTargets.data('degree', 0);
-        $rotateSlowTargets.each(function()
-        {
-            var $this = $(this);
-
-            var interval = setInterval(function()
-            {
-                if (!$this.is(':visible'))
-                {
-                    clearInterval(interval);
-                }
-                else
-                {
-                    var direction = $this.data('direction');
-                    var degreeStep = 0.1;
-                    if ($this.data('degree-step'))
-                    {
-                        degreeStep = parseFloat($this.data('degree-step'));
-                    }
-
-                    if (direction === 'left')
-                    {
-                        $this.data('degree', $this.data('degree') - degreeStep);
-                    }
-                    else
-                    {
-                        $this.data('degree', $this.data('degree') + degreeStep);
-                    }
-
-                    var style = 'rotate(' + $this.data('degree') + 'deg)';
-                    $this.css({
-                        '-webkit-transform': style,
-                        '-moz-transform': style,
-                        '-o-transform': style,
-                        '-ms-transform': style,
-                        'transform': style
-                    });
-                }
-            }, 75);
         });
     },
 
