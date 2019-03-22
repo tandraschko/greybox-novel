@@ -11,10 +11,15 @@
         <link rel="stylesheet" type="text/css" href="./index.css" />
     </head>
     <body>
-
-	    <img id="next-blink" src="./Images/Weiterbutton_blink.png" style="margin-left: 1071px; margin-top: 833px; position: fixed; z-index: 100;"
-		    class="blink" data-interval="1000" data-life="1000" data-fade-duration="1500" data-associate="next" />
-	    <img id="next" src="./Images/Weiterbutton.png" onclick="$('#next-blink').stop(true, true).hide(); $(this).hide(); greybox.logic.nextView();" style="margin-left: 1072px; margin-top: 830px; position: fixed; display: none; z-index: 100; width:149px; height:70px" />
+	
+		<div class="background">
+			<img src="./Szene45/Szene45.png" style="width: 100%; height: 100%; filter: blur(15px); opacity: 0.4;" />
+		</div>
+	
+		<img id="next-blink" src="./Images/Weiterbutton_blink.png" style="z-index: 100;"
+			class="blink next" data-interval="1000" data-life="1000" data-fade-duration="1500" data-associate="next" />
+		<img id="next" src="./Images/Weiterbutton.png" class="next" onclick="$('#next-blink').stop(true, true).hide(); $(this).hide(); greybox.logic.nextView();"
+			style="display: none; z-index: 100; width:149px; height:70px" />
 
 		<audio id="hintergrundmusik" loop>
 			<source src="./Sounds/Hintergrundmusik.wav.MP3" type="audio/mp3">
